@@ -30,15 +30,15 @@ export default function App() {
 
   const { signOut } = useAuthenticator((context) => [context.user]);
 
-  useEffect(() => {
-    fetchUserProfile();
-  }, []);
-
-  async function fetchUserProfile() {
+  const fetchUserProfile = async () => {
     const { data: profiles } = await client.models.UserProfile.list();
 
     setUserProfiles(profiles);
-  }
+  };
+
+  useEffect(() => {
+    fetchUserProfile();
+  }, []);
 
   return (
     <Flex

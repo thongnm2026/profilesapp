@@ -29,10 +29,13 @@ importers:
         version: 1.14.3(@aws-sdk/client-cloudformation@3.758.0)(@aws-sdk/client-s3@3.758.0)(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)(zod@3.24.2)
       '@aws-amplify/backend-cli':
         specifier: ^1.5.0
-        version: 1.5.0(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(aws-cdk@2.1003.0)(constructs@10.4.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)
+        version: 1.5.0(@aws-sdk/types@3.734.0)(@types/node@22.13.10)(aws-cdk-lib@2.180.0(constructs@10.4.2))(aws-cdk@2.1003.0)(constructs@10.4.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)
       '@eslint/js':
         specifier: ^9.21.0
         version: 9.22.0
+      '@types/node':
+        specifier: ^22.13.10
+        version: 22.13.10
       '@types/react':
         specifier: ^19.0.10
         version: 19.0.10
@@ -41,7 +44,7 @@ importers:
         version: 19.0.4(@types/react@19.0.10)
       '@vitejs/plugin-react-swc':
         specifier: ^3.8.0
-        version: 3.8.0(vite@6.2.2(tsx@4.19.3))
+        version: 3.8.0(vite@6.2.2(@types/node@22.13.10)(tsx@4.19.3))
       aws-cdk:
         specifier: 2.1003.0
         version: 2.1003.0
@@ -77,7 +80,7 @@ importers:
         version: 8.26.1(eslint@9.22.0)(typescript@5.7.3)
       vite:
         specifier: ^6.2.0
-        version: 6.2.2(tsx@4.19.3)
+        version: 6.2.2(@types/node@22.13.10)(tsx@4.19.3)
 
 packages:
 
@@ -2699,6 +2702,9 @@ packages:
   '@types/lodash@4.17.16':
     resolution: {integrity: sha512-HX7Em5NYQAXKW+1T+FiuG27NGwzJfCX3s1GjOa7ujxZa52kjJLOr4FUxT+giF6Tgxv1e+/czV/iTtBw27WTU9g==}
 
+  '@types/node@22.13.10':
+    resolution: {integrity: sha512-I6LPUvlRH+O6VRUqYOcMudhaIdUVWfsjnZavnsraHvpBwaEyMN29ry+0UVJhImYL16xsscu0aske3yA+uPOWfw==}
+
   '@types/react-dom@19.0.4':
     resolution: {integrity: sha512-4fSQ8vWFkg+TGhePfUzVmat3eC14TXYSsiiDSLI0dVLsrm9gZFABjPy/Qu6TKgl1tq1Bu1yDsuQgY3A3DOjCcg==}
     peerDependencies:
@@ -4920,6 +4926,9 @@ packages:
     resolution: {integrity: sha512-eXL4nmJT7oCpkZsHZUOJo8hcX3GbsiDOa0Qu9F646fi8dT3XuSVopVqAcEiVzSKKH7UoDti23wNX3qGFxcW5Qg==}
     engines: {node: '>=0.10.0'}
 
+  undici-types@6.20.0:
+    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
+
   unicorn-magic@0.3.0:
     resolution: {integrity: sha512-+QBBXBCvifc56fsbuxZQ6Sic3wqqc3WWaqxs58gvJrcOuN83HGTCwz3oS5phzU9LthRNE9VrJCFCLUgHeeFnfA==}
     engines: {node: '>=18'}
@@ -5272,19 +5281,19 @@ snapshots:
       - aws-crt
       - zod
 
-  '@aws-amplify/backend-cli@1.5.0(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(aws-cdk@2.1003.0)(constructs@10.4.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)':
+  '@aws-amplify/backend-cli@1.5.0(@aws-sdk/types@3.734.0)(@types/node@22.13.10)(aws-cdk-lib@2.180.0(constructs@10.4.2))(aws-cdk@2.1003.0)(constructs@10.4.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)':
     dependencies:
       '@aws-amplify/backend-deployer': 1.1.20(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(aws-cdk@2.1003.0)(constructs@10.4.2)(typescript@5.7.3)
       '@aws-amplify/backend-output-schemas': 1.4.1(zod@3.24.2)
       '@aws-amplify/backend-secret': 1.2.0(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)
-      '@aws-amplify/cli-core': 1.4.1(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)
+      '@aws-amplify/cli-core': 1.4.1(@aws-sdk/types@3.734.0)(@types/node@22.13.10)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)
       '@aws-amplify/client-config': 1.5.8(@aws-sdk/client-amplify@3.767.0)(@aws-sdk/client-cloudformation@3.758.0)(@aws-sdk/client-s3@3.758.0)(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)
       '@aws-amplify/deployed-backend-client': 1.5.2(@aws-sdk/client-amplify@3.767.0)(@aws-sdk/client-cloudformation@3.758.0)(@aws-sdk/client-s3@3.758.0)(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)
       '@aws-amplify/form-generator': 1.0.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@aws-amplify/model-generator': 1.0.13(@aws-sdk/client-amplify@3.767.0)(@aws-sdk/client-cloudformation@3.758.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)(zod@3.24.2)
       '@aws-amplify/platform-core': 1.6.5(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)
       '@aws-amplify/plugin-types': 1.8.1(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)
-      '@aws-amplify/sandbox': 1.2.12(@aws-sdk/client-amplify@3.767.0)(@aws-sdk/client-cloudformation@3.758.0)(@aws-sdk/client-s3@3.758.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(aws-cdk@2.1003.0)(constructs@10.4.2)(typescript@5.7.3)
+      '@aws-amplify/sandbox': 1.2.12(@aws-sdk/client-amplify@3.767.0)(@aws-sdk/client-cloudformation@3.758.0)(@aws-sdk/client-s3@3.758.0)(@types/node@22.13.10)(aws-cdk-lib@2.180.0(constructs@10.4.2))(aws-cdk@2.1003.0)(constructs@10.4.2)(typescript@5.7.3)
       '@aws-amplify/schema-generator': 1.2.8(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)
       '@aws-sdk/client-amplify': 3.767.0
       '@aws-sdk/client-cloudformation': 3.758.0
@@ -5428,10 +5437,10 @@ snapshots:
       - supports-color
       - zod
 
-  '@aws-amplify/cli-core@1.4.1(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)':
+  '@aws-amplify/cli-core@1.4.1(@aws-sdk/types@3.734.0)(@types/node@22.13.10)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)':
     dependencies:
       '@aws-amplify/platform-core': 1.6.5(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)
-      '@inquirer/prompts': 7.4.0
+      '@inquirer/prompts': 7.4.0(@types/node@22.13.10)
       execa: 9.5.2
       kleur: 4.1.5
       ora: 8.2.0
@@ -5713,11 +5722,11 @@ snapshots:
       aws-cdk-lib: 2.180.0(constructs@10.4.2)
       constructs: 10.4.2
 
-  '@aws-amplify/sandbox@1.2.12(@aws-sdk/client-amplify@3.767.0)(@aws-sdk/client-cloudformation@3.758.0)(@aws-sdk/client-s3@3.758.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(aws-cdk@2.1003.0)(constructs@10.4.2)(typescript@5.7.3)':
+  '@aws-amplify/sandbox@1.2.12(@aws-sdk/client-amplify@3.767.0)(@aws-sdk/client-cloudformation@3.758.0)(@aws-sdk/client-s3@3.758.0)(@types/node@22.13.10)(aws-cdk-lib@2.180.0(constructs@10.4.2))(aws-cdk@2.1003.0)(constructs@10.4.2)(typescript@5.7.3)':
     dependencies:
       '@aws-amplify/backend-deployer': 1.1.20(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(aws-cdk@2.1003.0)(constructs@10.4.2)(typescript@5.7.3)
       '@aws-amplify/backend-secret': 1.2.0(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)
-      '@aws-amplify/cli-core': 1.4.1(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)
+      '@aws-amplify/cli-core': 1.4.1(@aws-sdk/types@3.734.0)(@types/node@22.13.10)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)
       '@aws-amplify/client-config': 1.5.8(@aws-sdk/client-amplify@3.767.0)(@aws-sdk/client-cloudformation@3.758.0)(@aws-sdk/client-s3@3.758.0)(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)
       '@aws-amplify/deployed-backend-client': 1.5.2(@aws-sdk/client-amplify@3.767.0)(@aws-sdk/client-cloudformation@3.758.0)(@aws-sdk/client-s3@3.758.0)(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)
       '@aws-amplify/platform-core': 1.6.5(@aws-sdk/types@3.734.0)(aws-cdk-lib@2.180.0(constructs@10.4.2))(constructs@10.4.2)
@@ -8289,95 +8298,121 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@inquirer/checkbox@4.1.4':
+  '@inquirer/checkbox@4.1.4(@types/node@22.13.10)':
     dependencies:
-      '@inquirer/core': 10.1.9
+      '@inquirer/core': 10.1.9(@types/node@22.13.10)
       '@inquirer/figures': 1.0.11
-      '@inquirer/type': 3.0.5
+      '@inquirer/type': 3.0.5(@types/node@22.13.10)
       ansi-escapes: 4.3.2
       yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 22.13.10
 
-  '@inquirer/confirm@5.1.8':
+  '@inquirer/confirm@5.1.8(@types/node@22.13.10)':
     dependencies:
-      '@inquirer/core': 10.1.9
-      '@inquirer/type': 3.0.5
+      '@inquirer/core': 10.1.9(@types/node@22.13.10)
+      '@inquirer/type': 3.0.5(@types/node@22.13.10)
+    optionalDependencies:
+      '@types/node': 22.13.10
 
-  '@inquirer/core@10.1.9':
+  '@inquirer/core@10.1.9(@types/node@22.13.10)':
     dependencies:
       '@inquirer/figures': 1.0.11
-      '@inquirer/type': 3.0.5
+      '@inquirer/type': 3.0.5(@types/node@22.13.10)
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
       mute-stream: 2.0.0
       signal-exit: 4.1.0
       wrap-ansi: 6.2.0
       yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 22.13.10
 
-  '@inquirer/editor@4.2.9':
+  '@inquirer/editor@4.2.9(@types/node@22.13.10)':
     dependencies:
-      '@inquirer/core': 10.1.9
-      '@inquirer/type': 3.0.5
+      '@inquirer/core': 10.1.9(@types/node@22.13.10)
+      '@inquirer/type': 3.0.5(@types/node@22.13.10)
       external-editor: 3.1.0
+    optionalDependencies:
+      '@types/node': 22.13.10
 
-  '@inquirer/expand@4.0.11':
+  '@inquirer/expand@4.0.11(@types/node@22.13.10)':
     dependencies:
-      '@inquirer/core': 10.1.9
-      '@inquirer/type': 3.0.5
+      '@inquirer/core': 10.1.9(@types/node@22.13.10)
+      '@inquirer/type': 3.0.5(@types/node@22.13.10)
       yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 22.13.10
 
   '@inquirer/figures@1.0.11': {}
 
-  '@inquirer/input@4.1.8':
+  '@inquirer/input@4.1.8(@types/node@22.13.10)':
     dependencies:
-      '@inquirer/core': 10.1.9
-      '@inquirer/type': 3.0.5
+      '@inquirer/core': 10.1.9(@types/node@22.13.10)
+      '@inquirer/type': 3.0.5(@types/node@22.13.10)
+    optionalDependencies:
+      '@types/node': 22.13.10
 
-  '@inquirer/number@3.0.11':
+  '@inquirer/number@3.0.11(@types/node@22.13.10)':
     dependencies:
-      '@inquirer/core': 10.1.9
-      '@inquirer/type': 3.0.5
+      '@inquirer/core': 10.1.9(@types/node@22.13.10)
+      '@inquirer/type': 3.0.5(@types/node@22.13.10)
+    optionalDependencies:
+      '@types/node': 22.13.10
 
-  '@inquirer/password@4.0.11':
+  '@inquirer/password@4.0.11(@types/node@22.13.10)':
     dependencies:
-      '@inquirer/core': 10.1.9
-      '@inquirer/type': 3.0.5
+      '@inquirer/core': 10.1.9(@types/node@22.13.10)
+      '@inquirer/type': 3.0.5(@types/node@22.13.10)
       ansi-escapes: 4.3.2
+    optionalDependencies:
+      '@types/node': 22.13.10
 
-  '@inquirer/prompts@7.4.0':
+  '@inquirer/prompts@7.4.0(@types/node@22.13.10)':
     dependencies:
-      '@inquirer/checkbox': 4.1.4
-      '@inquirer/confirm': 5.1.8
-      '@inquirer/editor': 4.2.9
-      '@inquirer/expand': 4.0.11
-      '@inquirer/input': 4.1.8
-      '@inquirer/number': 3.0.11
-      '@inquirer/password': 4.0.11
-      '@inquirer/rawlist': 4.0.11
-      '@inquirer/search': 3.0.11
-      '@inquirer/select': 4.1.0
+      '@inquirer/checkbox': 4.1.4(@types/node@22.13.10)
+      '@inquirer/confirm': 5.1.8(@types/node@22.13.10)
+      '@inquirer/editor': 4.2.9(@types/node@22.13.10)
+      '@inquirer/expand': 4.0.11(@types/node@22.13.10)
+      '@inquirer/input': 4.1.8(@types/node@22.13.10)
+      '@inquirer/number': 3.0.11(@types/node@22.13.10)
+      '@inquirer/password': 4.0.11(@types/node@22.13.10)
+      '@inquirer/rawlist': 4.0.11(@types/node@22.13.10)
+      '@inquirer/search': 3.0.11(@types/node@22.13.10)
+      '@inquirer/select': 4.1.0(@types/node@22.13.10)
+    optionalDependencies:
+      '@types/node': 22.13.10
 
-  '@inquirer/rawlist@4.0.11':
+  '@inquirer/rawlist@4.0.11(@types/node@22.13.10)':
     dependencies:
-      '@inquirer/core': 10.1.9
-      '@inquirer/type': 3.0.5
+      '@inquirer/core': 10.1.9(@types/node@22.13.10)
+      '@inquirer/type': 3.0.5(@types/node@22.13.10)
       yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 22.13.10
 
-  '@inquirer/search@3.0.11':
+  '@inquirer/search@3.0.11(@types/node@22.13.10)':
     dependencies:
-      '@inquirer/core': 10.1.9
+      '@inquirer/core': 10.1.9(@types/node@22.13.10)
       '@inquirer/figures': 1.0.11
-      '@inquirer/type': 3.0.5
+      '@inquirer/type': 3.0.5(@types/node@22.13.10)
       yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 22.13.10
 
-  '@inquirer/select@4.1.0':
+  '@inquirer/select@4.1.0(@types/node@22.13.10)':
     dependencies:
-      '@inquirer/core': 10.1.9
+      '@inquirer/core': 10.1.9(@types/node@22.13.10)
       '@inquirer/figures': 1.0.11
-      '@inquirer/type': 3.0.5
+      '@inquirer/type': 3.0.5(@types/node@22.13.10)
       ansi-escapes: 4.3.2
       yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 22.13.10
 
-  '@inquirer/type@3.0.5': {}
+  '@inquirer/type@3.0.5(@types/node@22.13.10)':
+    optionalDependencies:
+      '@types/node': 22.13.10
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -9524,6 +9559,10 @@ snapshots:
 
   '@types/lodash@4.17.16': {}
 
+  '@types/node@22.13.10':
+    dependencies:
+      undici-types: 6.20.0
+
   '@types/react-dom@19.0.4(@types/react@19.0.10)':
     dependencies:
       '@types/react': 19.0.10
@@ -9617,10 +9656,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitejs/plugin-react-swc@3.8.0(vite@6.2.2(tsx@4.19.3))':
+  '@vitejs/plugin-react-swc@3.8.0(vite@6.2.2(@types/node@22.13.10)(tsx@4.19.3))':
     dependencies:
       '@swc/core': 1.11.9
-      vite: 6.2.2(tsx@4.19.3)
+      vite: 6.2.2(@types/node@22.13.10)(tsx@4.19.3)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -11882,6 +11921,8 @@ snapshots:
 
   unc-path-regex@0.1.2: {}
 
+  undici-types@6.20.0: {}
+
   unicorn-magic@0.3.0: {}
 
   universalify@0.1.2: {}
@@ -11939,12 +11980,13 @@ snapshots:
 
   value-or-promise@1.0.12: {}
 
-  vite@6.2.2(tsx@4.19.3):
+  vite@6.2.2(@types/node@22.13.10)(tsx@4.19.3):
     dependencies:
       esbuild: 0.25.1
       postcss: 8.5.3
       rollup: 4.35.0
     optionalDependencies:
+      '@types/node': 22.13.10
       fsevents: 2.3.3
       tsx: 4.19.3
 
